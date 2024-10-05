@@ -1,3 +1,4 @@
+/*
 package mvc_demo.student_manager.service;
 
 import mvc_demo.student_manager.model.student;
@@ -10,3 +11,4 @@ public interface IStudentService {
     List<student> findALl();
     void add(Student student);
 }
+*/
