@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập tên ngôi sao sau đó tìm ngôi sao đó trong mảng</title>
+</head>
+<body>
+<script>
+    let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function findStar(star){
+        for (let i = 0; i < array1.length; i++) {
+            if (star === array1[i]){
+                return alert("sao " + star + " thuoc chom sao " + array2[i]);
+            }
+        }
+        return alert("Khong tim thay chom sao can tim");
+    }
+    let star = prompt("Nhap ten ngoi sao can tim: ");
+    findStar(star);
+</script>
+</body>
+</html>

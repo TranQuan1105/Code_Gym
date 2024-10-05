@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm tính giai thừa</title>
+</head>
+<body>
+<script>
+    let temp = 1;
+    function factorial(number){
+        for (let i = 1; i < number; i++) {
+            temp = number * i;
+        }
+        return temp;
+    }
+    number = +prompt("Nhap so can tinh");
+    alert("giai thua cua " + number + " la " + factorial(number));
+</script>
+</body>
+</html>

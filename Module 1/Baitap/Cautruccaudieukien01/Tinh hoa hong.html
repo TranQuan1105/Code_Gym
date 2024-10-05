@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng</title>
+</head>
+<body>
+    <script>
+        let phantramhoahong1 = 0.1;
+        let phantramhoahong2 = 0.15;
+        let phantramhoahong3 = 0.2;
+        var giaban = prompt("nhap gia ban 1 mat hang: ");
+        var tienhoahong;
+        if (giaban >= 10000000){
+            tienhoahong = giaban * phantramhoahong1;
+        }
+        else if (giaban >= 1000000){
+            tienhoahong = giaban * phantramhoahong2;
+        }
+        else {
+            tienhoahong = giaban * phantramhoahong3;
+        }
+        alert("tien hoa hong nhan duoc: " + tienhoahong);
+    </script>
+</body>
+</html>

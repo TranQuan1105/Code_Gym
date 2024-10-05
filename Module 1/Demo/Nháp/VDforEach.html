@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VD forEach</title>
+</head>
+<body>
+    <script>
+        //forEach sử dụng để in thuộc tính và giá trị của thuộc tính trong hàm (function)
+        //forEach sử dụng cho hàm (function), không thể sử dụng cho chuỗi và biến có thuộc tính
+        var person = [
+            {
+                firstName: "Quan",
+                lastName: "Tran",
+                address: "DaNang"
+            }
+        ]
+        person.forEach(function(person){
+            alert(person);
+            console.log(person);
+        })
+    </script>
+</body>
+</html>

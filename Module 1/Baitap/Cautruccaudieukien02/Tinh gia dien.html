@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+    <script>
+        var sanluong = +prompt("Nhap so dien:");
+        if (sanluong < 50) {
+            alert("Gia dien: " + (sanluong * 1678) + "dong/kWh");
+        }
+        else if (sanluong < 100){
+            alert("Gia dien: " + (sanluong * 1734) + "dong/kWh");
+        }
+        else if (sanluong < 200){
+            alert("Gia dien: " + (sanluong * 2014) + "dong/kWh");
+        }
+        else if (sanluong < 300){
+            alert("Gia dien: " + (sanluong * 2536) + "dong/kWh");
+        }
+        else if (sanluong < 400){
+            alert("Gia dien: " + (sanluong * 2834) + "dong/kWh");
+        }
+        else {
+            alert("Gia dien: " + (sanluong * 2927) + "dong/kWh");
+        }
+    </script>
+</body>
+</html>

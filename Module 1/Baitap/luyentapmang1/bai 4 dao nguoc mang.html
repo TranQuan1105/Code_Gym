@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược thứ tự các phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        let array1 = [];
+        let array2 = [];
+        for (let i = 0; i <= 5; i++) {
+            array1 [i] = +prompt("Nhap cac phan tu:");
+            if (i === 5) {
+                for (let j = array1.length - 1; j >= 0; j--) {
+                    array2 [j] = array1 [i - j];
+                }
+            }
+        }
+        alert("Cac phan tu trong array sau khi dao nguoc: " + array2);
+    </script>
+</body>
+</html>

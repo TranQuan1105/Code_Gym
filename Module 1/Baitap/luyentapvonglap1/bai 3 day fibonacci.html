@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra 20 số đầu tiên trong dạy fibonacci</title>
+</head>
+<body>
+<script>
+    //1 1 2 3 5 8 13 21 34 56 90
+    let a = 0;
+    let b = 1;
+    let temp;
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+    for (let i = 0; i < 20; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+        document.write(temp + "<br>");
+    }
+</script>
+</body>
+</html>

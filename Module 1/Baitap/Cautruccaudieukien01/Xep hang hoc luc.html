@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+    <script>
+        var diemkiemtra = prompt("Nhap diem bai kiem tra:");
+        var diemgiuaki = prompt("Nhap diem bai giua ki:");
+        var diemcuoiki = prompt("Nhap diem bai cuoi ki:");
+        var diem;
+        diem = (diemkiemtra + diemgiuaki * 2 + diemcuoiki * 3) / 6
+        if (diem > 8.5){
+            alert("hoc luc gioi");
+        }
+        else if (diem > 6.5){
+            alert("hoc luc kha");
+        }
+        else if (diem > 5){
+            alert("hoc luc trung binh");
+        }
+        else {
+            alert("hoc luc yeu");
+        }
+    </script>
+</body>
+</html>

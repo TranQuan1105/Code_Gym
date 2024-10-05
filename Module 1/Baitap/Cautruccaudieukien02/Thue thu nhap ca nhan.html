@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+  <script>
+    var thunhap = +prompt("Nhap so thu nhap ca nhan:");
+    if (thunhap < 60000000) {
+      alert("Gia thue phai nop: " + (thunhap * 0.05) + "dong/kWh");
+    }
+    else if (sanluong < 60000000){
+      alert("Gia thue phai nop: " + (thunhap * 0.1) + "dong/kWh");
+    }
+    else if (sanluong < 60000000){
+      alert("Gia thue phai nop: " + (thunhap * 0.15) + "dong/nam");
+    }
+    else if (sanluong < 120000000){
+      alert("Gia thue phai nop: " + (thunhap * 0.2) + "dong/nam");
+    }
+    else if (sanluong < 216000000){
+      alert("Gia thue phai nop: " + (thunhap * 0.25) + "dong/nam");
+    }
+    else {
+      alert("Gia thue phai nop: " + (thunhap * 0.3) + "dong/nam");
+    }
+  </script>
+</body>
+</html>

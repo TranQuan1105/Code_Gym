@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lập trình hướng đối tượng</title>
+</head>
+<body>
+<script>
+    /*có 3 cách để khai báo lớp:
+    * c1: sử dụng các singletion class
+    * vd*/
+    /*let dog = {
+    name: "kiki",
+    age: 2,
+    hairColor: "white",
+    say (){
+    console.log("gâu gâu");
+      }
+    }
+    console.log(dog.name);
+    console.log(dog.say());*/
+
+    class Student{
+        constructor (name, age, email){
+            this.name = name;
+            this.age = age;
+            this.email = email;
+        }
+    }
+
+    let student = new Student("Quan", 19, "quantran11052005@gmail.com");
+    console.log(student.name);
+</script>
+</body>
+</html>

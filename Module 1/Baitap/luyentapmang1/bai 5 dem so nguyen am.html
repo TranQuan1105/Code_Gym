@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số nguyên âm trong chuỗi</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let temp = 0;
+        for (let i = 0; i < 5; i++) {
+            numbers[i] = +prompt("Nhap phan tu: ");
+        }
+        for (let i = 0; i < 5; i++) {
+            if (numbers[i] < 0){
+                temp++;
+            }
+        }
+        alert("dãy có " + temp + " số âm");
+    </script>
+</body>
+</html>

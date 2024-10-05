@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi</title>
+</head>
+<body>
+    <script>
+        alert("Nhap ngay/thang/nam sinh cua ban:");
+        var day = +prompt("Nhap ngay sinh: ");
+        var month = +prompt("Nhap thang sinh: ");
+        var year = +prompt("Nhap nam sinh: ");
+        var today = new Date();
+        var age = today.getFullYear() - year;
+        if (0 < age && age < 120) {
+            if (month < today.getMonth()) {
+                alert("Tuoi cua ban la: " + age);
+            }
+            else if (month = today.getMonth()) {
+                if (day <= today.getDay()) {
+                    alert("Tuoi cua ban la: " + age);
+                }
+                else {
+                    alert("Tuoi cua ban la: " + (age - 1));
+                }
+            }
+            else {
+                alert("Tuoi cua ban la: " + (age - 1));
+            }
+        }
+        else {
+            alert("Day khong phai tuoi cua mot nguoi");
+        }
+
+    </script>
+</body>
+</html>

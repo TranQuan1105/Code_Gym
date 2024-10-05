@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+</head>
+<body>
+<script>
+    class Circle{
+        constructor(radius, color){
+            this.color = color;
+            this.getRadius = radius;
+            this.getArea = Math.PI * radius**2;
+        }
+    }
+    let circle = new Circle(getRadius(), color());
+    function getRadius(radius){
+        radius = +prompt("Nhap ban kinh: ");
+        return radius;
+    }
+
+    function color(color){
+        color = prompt("Mau sac cua hinh chu nhat: ");
+        return color;
+    }
+    document.write("bán kính của hình tròn màu " + circle.color + " là " + circle.getRadius + "<br>" + " diện tích hình tròn: " + circle.getArea);
+</script>
+</body>
+</html>

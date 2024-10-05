@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 số thực có phải cạnh của tam giác không</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Canh thu nhat cua tam giac:");
+        var b = prompt("Canh thu hai cua tam giac:");
+        var c = prompt("Canh thu ba cua tam giac:");
+        if (a > 0 && b > 0 && c > 0){
+            if( (a < (b + c)) && (b < (a + c)) && (c < (a + b)) ){
+                alert("a, b, c la 3 canh cua mot tam giac");
+            }
+            else {
+                alert("a, b, c khong phai la 3 canh cua mot tam giac");
+            }
+        }
+        else {
+            alert("a, b, c khong phai la 3 canh cua mot tam giac");
+        }
+    </script>
+</body>
+</html>

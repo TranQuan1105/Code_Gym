@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh giá trị trong mảng với 10</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    let temp = 0;
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = +prompt("nhap phan tu thu " + (i+1) );
+        if (numbers[i] >= 10) {
+            temp++;
+        }
+    }
+    alert("co " + temp + " phan tu lon hon 10");
+</script>
+</body>
+</html>

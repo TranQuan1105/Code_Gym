@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrLength = +prompt("Nhập số phần tử của mảng : ");
+    let k = +prompt("Nhập số nguyên dương K: ");
+    for (let i = 0; i < arrLength; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + (i+1) + " vào mảng");
+    }
+    let tong = 0;
+    let temp = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            tong = arr[i] + arr[j];
+            if (tong % k === 0) {
+                temp++;
+            }
+        }
+    }
+    alert("Số cặp thỏa mãn là: " + temp);
+</script>
+</body>
+</html>

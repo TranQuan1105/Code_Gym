@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VD về for of</title>
+</head>
+<body>
+    <script>
+        // for of dùng để in giá trị của chuỗi (string)
+        // for of sử dụng cho chuỗi (string)
+        var person = "Quan";
+        for (var p of person) {
+            debugger
+            console.log(p); //in ra thuộc tính của chuỗi "quan" --> kq: q u a n
+            console.log(person[p]); /*in ra giá trị của thuộc tính "quan" --> undefined undefined undefined undefined
+            bởi vì mỗi kí tự trong string không có giá trị cụ thể*/
+        }
+    </script>
+</body>
+</html>

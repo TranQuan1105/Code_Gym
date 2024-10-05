@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Exchange</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1> Enter your money amount to see the exchanged value </h1>
+        Your cash:
+        <select id="from">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <input placeholder="Cash" type="unsignednumber" id="Cash" name="Cash">
+        <button onclick="exchange()">Exchange </button>
+        <br>
+        <br>
+        Your money exchanged:
+        <p id="VND"></p>
+        <p id="USD"></p>
+        <p id="EUR"></p>
+        <script>
+            function exchange() {
+                let cash = document.getElementById("cash").value;
+                let from = document.getElementById("from").value;
+                USD
+                if(from === VND){
+                    document.getElementById("VND").innerHTML = "Result: " + VND + " USD";
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

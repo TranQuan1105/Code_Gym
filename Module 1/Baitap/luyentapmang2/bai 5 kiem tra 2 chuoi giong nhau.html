@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem 2 chuỗi có giống nhau không</title>
+</head>
+<body>
+<script>
+    let array1 = [];
+    let array2 = [];
+    for (let i = 0; i < 5; i++) {
+        array1[i] = +prompt("Nhap cac phan tu cua chuoi thu nhat: ");
+    }
+    for (let i = 0; i < 5; i++) {
+        array2[i] = +prompt("Nhap cac phan tu cua chuoi thu hai: ");
+    }
+    let temp = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] === array2[i]){
+            temp += 1;
+        }
+    }
+    if (temp === 5){
+        alert("2 mang giong nhau");
+    }
+    else {
+        alert("2 mang khac nhau");
+    }
+</script>
+</body>
+</html>

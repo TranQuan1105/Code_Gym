@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp thứ tự tăng dần các số trong mảng</title>
+</head>
+<body>
+    <script>
+        let array = [];
+        let max;
+        for (let i = 0; i < 10; i++) {
+            array[i] = +prompt("Nhap phan tu thu "+ i + " cua mang")
+        }
+        for (let i = 0; i < array.length; i++) {
+            max = i;
+            for (let j = i + 1; j < array.length; j++) {
+                if (array[j] > array[max]) {
+                    max = j;
+                    if (max !== i) {
+                        array[max] += array[i];
+                        array[i] = array[max] - array[i];
+                        array[max] -= array[i];
+                    }
+                }
+            }
+        }
+    alert(array);
+    </script>
+</body>
+</html>

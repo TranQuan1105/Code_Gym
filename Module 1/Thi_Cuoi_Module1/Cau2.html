@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 2</title>
+</head>
+<body>
+<script>
+    let diem = +prompt("nhap diem: ");
+    if (0 <= diem && diem <= 100) {
+        if (diem < 48) {
+            alert("Ket qua: TRUOT");
+        } else {
+            lamtron(diem);
+        }
+    } else {
+        alert("Diem khong hop le! Vui long nhap lai");
+    }
+
+    function lamtron(diem) {
+        let nhungboicua5 = [];
+        let boicua5 = 0;
+        for (let i = 0; i <= 20; i++) {
+            nhungboicua5[i] = boicua5;
+            boicua5 += 5;
+            console.log(nhungboicua5);
+        }
+        for (let i = 0; i <= 20; i++) {
+            if ((nhungboicua5[i] - diem >= 0) && (nhungboicua5[i] - diem < 5)) {
+                if (nhungboicua5[i] - diem < 3) {
+                    diem = nhungboicua5[i];
+                }
+            }
+        }
+        alert("Diem cua ban la: " + diem + " , Ket qua: DAT")
+    }
+
+</script>
+</body>
+</html>

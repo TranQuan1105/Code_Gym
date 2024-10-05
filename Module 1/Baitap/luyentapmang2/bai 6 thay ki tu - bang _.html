@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm tất cả các kí tự - trong mảng và thay bằng kí tự _</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let number = +prompt("nhap so phan tu cua mang: ");
+    for (let i = 0; i < number; i++) {
+        array[i] = prompt("nhap cac ki tu: ");
+        if (array[i] === '-') {
+            array.splice(i,1);
+            array.push('_',array[i]);
+        }
+    }
+    alert(array.join(''));
+</script>
+</body>
+</html>

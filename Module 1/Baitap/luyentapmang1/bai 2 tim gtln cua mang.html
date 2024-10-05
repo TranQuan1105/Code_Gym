@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let temp = 0;
+        var max = 0;
+        for (let i = 0; i < 10; i++){
+            numbers[i] = prompt("nhap phan tu thu " + (i+1));
+            if (numbers[i] >= max){
+                max = numbers[i];
+                temp = i;
+            }
+        }
+        console.log(numbers);
+        console.log("phan tu lon nhat trong mang la " + max + " tai vi tri " + temp);
+    </script>
+</body>
+</html>

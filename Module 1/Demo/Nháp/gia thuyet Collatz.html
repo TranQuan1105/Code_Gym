@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giả thuyết collatz</title>
+</head>
+<body>
+<!--Giả thuyết Collatz đề cập đến một dãy số xác định như sau: bắt đầu bằng một số tự-->
+<!--nhiên n bất kỳ. Mỗi số tiếp theo được xác định theo số trước đó bằng định nghĩa sau:-->
+<!--nếu số trước đó là một số chẵn, thì số tiếp theo bằng một nửa số trước. Nếu số trước là-->
+<!--một số lẻ, thì số tiếp theo bằng ba lần số trước cộng với 1. Phỏng đoán cho rằng với bất-->
+<!--kỳ giá trị nào của n, dãy số luôn luôn đạt tới 1-->
+
+<!--Pseudo code-->
+<!--input a random number
+if (number is even){number = number / 2}
+else {number = number * 3 + 1}
+loop this action until number react the smallest natural number-->
+
+<!--theory: the number alway is 1-->
+
+<script>
+    let firstNumber = +prompt("nhap mot so bat ki");
+    let temp = 0;
+    while (firstNumber >= 0){
+        if (firstNumber % 2 === 0){
+            firstNumber = firstNumber / 2;
+        }
+        else {
+            firstNumber = firstNumber * 3 + 1;
+        }
+        temp += 1;
+        if (firstNumber <= 1){
+            break;
+        }
+    }
+    alert(firstNumber + "với số lần lặp là: " + temp);
+</script>
+</body>
+</html>
