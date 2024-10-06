@@ -2,7 +2,7 @@ package ss03_method;
 
 import java.util.Scanner;
 
-public class timPhanTuLonNhatTrongMang2Chieu {
+public class TimPhanTuLonNhatTrongMang2Chieu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
