@@ -1,4 +1,4 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Point_va_MoveablePoint;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.point_va_moveablePoint;
 
 import java.util.Arrays;
 

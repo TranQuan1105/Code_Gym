@@ -1,4 +1,4 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Point2D_Point3D;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.point2d_point3d;
 
 public class Point3D extends Point2D{
     private float z = 0.0f;

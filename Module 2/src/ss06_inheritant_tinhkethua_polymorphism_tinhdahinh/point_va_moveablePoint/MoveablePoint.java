@@ -1,4 +1,4 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Point_va_MoveablePoint;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.point_va_moveablePoint;
 
 public class MoveablePoint extends Point{
     private float xSpeed = 0.0f;

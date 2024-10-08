@@ -1,15 +1,14 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Point_va_MoveablePoint;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.point2d_point3d;
 
-public class Point {
+public class Point2D {
     private float x = 0.0f;
     private float y = 0.0f;
 
-    public Point(float x, float y){
+    public Point2D(float x, float y) {
         this.x = x;
         this.y = y;
     }
-
-    public Point(){}
+    public Point2D(){}
 
     public float getX() {
         return x;
@@ -27,18 +26,18 @@ public class Point {
         this.y = y;
     }
 
-    public static void setXY(Point point,float x, float y){
-        point.x = x;
-        point.y = y;
+    public void setXY(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public float[] getXY(){
-        return new float[]{x,y};
+    public float[] getXY() {
+        return new float[]{x, y};
     }
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "Point2D{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

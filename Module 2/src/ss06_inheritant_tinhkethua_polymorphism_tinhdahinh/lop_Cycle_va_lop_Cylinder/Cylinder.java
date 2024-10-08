@@ -1,4 +1,4 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Lop_Cycle_va_lop_Cylinder;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.lop_Cycle_va_lop_Cylinder;
 
 public class Cylinder extends Circle{
     private double height;

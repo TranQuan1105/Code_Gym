@@ -1,4 +1,4 @@
-package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.Doi_tuong_hinh_hoc;
+package ss06_inheritant_tinhkethua_polymorphism_tinhdahinh.doi_tuong_hinh_hoc;
 
 public class Shape {
     private String color = "green";
