@@ -1,4 +1,4 @@
-package ss11_stack_queue.Stack_su_dung_linkedList;
+package ss11_stack_queue.stack_su_dung_linkedList;
 
 public class GenericStackClient {
     public static void main(String[] args) {
