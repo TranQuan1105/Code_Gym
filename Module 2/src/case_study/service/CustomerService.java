@@ -2,7 +2,7 @@ package case_study.service;
 
 import case_study.repository.ICustomerRepository;
 import case_study.model.ICustomer;
-import case_study.model.Customer;
+import case_study.model.RegularCustomer;
 import case_study.model.VIPCustomer;
 
 import java.util.List;
@@ -20,7 +20,7 @@ public class CustomerService implements ICustomerService {
         if (isVIP) {
             customer = new VIPCustomer(id, name, email, ticketPrice, chosenSeats);
         } else {
-            customer = new Customer(id, name, email, ticketPrice, chosenSeats);
+            customer = new RegularCustomer(id, name, email, ticketPrice, chosenSeats);
         }
         customerRepository.addCustomer(customer);
     }

@@ -47,11 +47,6 @@ public class Main {
                     System.out.print("Giá vé: ");
                     double ticketPrice = scanner.nextDouble();
 
-                    System.out.print("Khách hàng dưới 16 tuổi? (true/false): ");
-                    boolean isU16 = scanner.nextBoolean();
-                    scanner.nextLine();
-
-
                     System.out.print("Khách hàng VIP? (true/false): ");
                     boolean isVIP = scanner.nextBoolean();
                     scanner.nextLine();

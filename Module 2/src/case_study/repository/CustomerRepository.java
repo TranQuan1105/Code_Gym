@@ -3,7 +3,7 @@ package case_study.repository;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import case_study.model.Customer;
+import case_study.model.RegularCustomer;
 import case_study.model.ICustomer;
 import case_study.model.VIPCustomer;
 
@@ -110,7 +110,7 @@ public class CustomerRepository implements ICustomerRepository {
                 if (isVIP) {
                     customers.add(new VIPCustomer(id, name, email, ticketPrice, seats));
                 } else {
-                    customers.add(new Customer(id, name, email, ticketPrice, seats));
+                    customers.add(new RegularCustomer(id, name, email, ticketPrice, seats));
                 }
             }
         } catch (IOException e) {

@@ -2,15 +2,15 @@ package case_study.model;
 
 import java.util.Arrays;
 
-public class Customer implements ICustomer {
-    protected String id;
-    protected String name;
-    protected String email;
-    protected double ticketPrice;
+public class RegularCustomer implements ICustomer {
+    private String id;
+    private String name;
+    private String email;
+    private double ticketPrice;
     private boolean isVIP;
-    protected String[][] seats;
+    private String[][] seats;
 
-    public Customer(String id, String name, String email, double ticketPrice, String[][] seats) {
+    public RegularCustomer(String id, String name, String email, double ticketPrice, String[][] seats) {
         this.id = id;
         this.name = name;
         this.email = email;
