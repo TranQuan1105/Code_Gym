@@ -66,14 +66,13 @@ public class CustomerRepository implements ICustomerRepository {
             }
         }
 
-        // Đánh dấu ghế đã đặt
         for (ICustomer customer : customers) {
             for (String[] seatRow : customer.getSeats()) {
                 for (String seat : seatRow) {
                     for (int i = 0; i < rows; i++) {
                         for (int j = 0; j < cols; j++) {
                             if (allSeats[i][j].equals(seat)) {
-                                allSeats[i][j] = "X"; // X để đánh dấu ghế đã đặt
+                                allSeats[i][j] = "X";
                             }
                         }
                     }
@@ -130,7 +129,6 @@ public class CustomerRepository implements ICustomerRepository {
                 sb.append(customer.getTicketPrice()).append(",");
                 sb.append(customer instanceof VIPCustomer).append(",");
 
-                // Ghi ghế ngồi
                 String[][] seats = customer.getSeats();
                 sb.append(seats.length).append(",").append(seats[0].length).append(",");
                 for (String[] row : seats) {

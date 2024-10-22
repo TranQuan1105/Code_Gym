@@ -190,15 +190,14 @@ public class Main {
         System.out.println("Danh sách ghế ngồi:");
         for (int i = 0; i < seats.length; i++) {
             for (int j = 0; j < seats[i].length; j++) {
-                // Tạo tên ghế dựa trên hàng và cột
                 String seatName = (i + 1) + String.valueOf((char) ('A' + j));
                 if (seats[i][j] != null && seats[i][j].equals("X")) {
-                    System.out.print(" X "); // Ghế đã đặt
+                    System.out.print(" X ");
                 } else {
-                    System.out.print(seatName + " "); // Ghế còn trống
+                    System.out.print(seatName + " ");
                 }
             }
-            System.out.println(); // Xuống dòng cho hàng tiếp theo
+            System.out.println();
         }
     }
 }
