@@ -15,4 +15,5 @@ public interface ICustomer {
     String toString();
 
     boolean isVIP();
+
 }

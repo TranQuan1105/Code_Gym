@@ -8,7 +8,7 @@ import case_study.model.VIPCustomer;
 import java.util.List;
 
 public class CustomerService implements ICustomerService {
-    private ICustomerRepository customerRepository;
+    private final ICustomerRepository customerRepository;
 
     public CustomerService(ICustomerRepository customerRepository) {
         this.customerRepository = customerRepository;

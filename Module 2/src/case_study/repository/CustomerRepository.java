@@ -97,7 +97,6 @@ public class CustomerRepository implements ICustomerRepository {
                 double ticketPrice = Double.parseDouble(fields[3]);
                 boolean isVIP = Boolean.parseBoolean(fields[4]);
 
-                // Đọc ghế ngồi
                 int rows = Integer.parseInt(fields[5]);
                 int cols = Integer.parseInt(fields[6]);
                 String[][] seats = new String[rows][cols];

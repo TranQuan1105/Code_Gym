@@ -7,8 +7,8 @@ import case_study.model.ICustomer;
 import java.util.List;
 
 public class CustomerController {
-    private CustomerService customerService;
-    private ICustomerView customerView;
+    private final CustomerService customerService;
+    private final ICustomerView customerView;
 
     public CustomerController(CustomerService customerService, ICustomerView customerView) {
         this.customerService = customerService;

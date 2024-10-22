@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class VIPCustomer extends Customer {
 
     public VIPCustomer(String id, String name, String email, double ticketPrice, String[][] seats) {
-        super(id, name, email, ticketPrice * 0.7, seats);  // Giảm 30%
+        super(id, name, email, ticketPrice * 0.8, seats);  // Giảm 20%
     }
 
     @Override
