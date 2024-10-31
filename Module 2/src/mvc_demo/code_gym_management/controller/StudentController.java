@@ -1,4 +1,3 @@
-/*
 package mvc_demo.code_gym_management.controller;
 
 import mvc_demo.code_gym_management.model.Student;
@@ -93,4 +92,3 @@ public class StudentController {
         studentController.start();
     }
 }
-*/

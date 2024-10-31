@@ -62,9 +62,9 @@ public class Main {
                         System.out.print("Nhập ghế bạn muốn đặt (ví dụ: 1A): ");
                         String chosenSeat = scanner.nextLine().toUpperCase();
 
-                        int chosenRow = Integer.parseInt(chosenSeat.substring(0, chosenSeat.length() - 1)) - 1; // Hàng (1-5)
-                        char chosenColChar = chosenSeat.charAt(chosenSeat.length() - 1); // Cột (A-D)
-                        int chosenCol = chosenColChar - 'A'; // Chuyển cột từ ký tự sang chỉ số (0-3)
+                        int chosenRow = Integer.parseInt(chosenSeat.substring(0, chosenSeat.length() - 1)) - 1;
+                        char chosenColChar = chosenSeat.charAt(chosenSeat.length() - 1);
+                        int chosenCol = chosenColChar - 'A';
                         if (chosenRow < 0 || chosenRow >= seats.length || chosenCol < 0 || chosenCol >= seats[chosenRow].length) {
                             System.out.println("Ghế không hợp lệ. Vui lòng nhập lại.");
                             i--;
@@ -180,10 +180,6 @@ public class Main {
         } while (choice != 0);
 
         scanner.close();
-    }
-
-    private static void addCustomer(){
-
     }
 
     private static void displaySeats(String[][] seats) {

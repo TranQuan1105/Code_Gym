@@ -1,6 +1,7 @@
 package case_study.repository;
 
 import java.util.List;
+
 import case_study.model.ICustomer;
 
 public interface ICustomerRepository {

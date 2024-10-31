@@ -1,4 +1,3 @@
-/*
 package mvc_demo.code_gym_management.service;
 
 
@@ -36,4 +35,3 @@ public class StudentService implements IStudentService {
         return studentRepository.getStudentById(id);
     }
 }
-*/
