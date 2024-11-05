@@ -16,7 +16,7 @@ public class Main {
         CustomerController customerController = new CustomerController(customerService, customerView);
         Scanner scanner = new Scanner(System.in);
         int choice;
-
+        
         do {
             System.out.println("\nChọn chức năng:");
             System.out.println("1. Thêm khách hàng");
