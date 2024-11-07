@@ -38,8 +38,8 @@ CREATE TABLE Mark (
 
 
 
-													     -- THÊM THÔNG TIN VÀO CƠ SỞ DỮ LIỆU --
-                                                         
+									-- THÊM THÔNG TIN VÀO CƠ SỞ DỮ LIỆU --
+														 
 -- Nhập dữ liệu vào bảng Class
 INSERT INTO Class (ClassID, ClassName, StartDate, Status)
 VALUES (1, 'A1', '2008-12-20', 1),
