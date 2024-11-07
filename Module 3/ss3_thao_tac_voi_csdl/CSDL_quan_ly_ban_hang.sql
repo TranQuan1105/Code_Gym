@@ -35,7 +35,7 @@ CREATE TABLE OrderDetail (
 );
 
 
-														-- Thao tác với CSDL quản lý bán hàng --
+						-- Thao tác với CSDL quản lý bán hàng --
 
 insert into Customer (cID, cName, cAge)
 values (1, 'Minh Quan', 10),
