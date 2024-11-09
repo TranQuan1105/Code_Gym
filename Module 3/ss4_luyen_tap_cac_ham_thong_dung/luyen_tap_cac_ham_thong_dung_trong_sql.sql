@@ -54,10 +54,10 @@ values ('Hung', 'Ha Noi', '0912113113', 1, 1),
 
 -- Thêm dữ liệu vào bảng Subject
 INSERT INTO Subject (SubID, SubName, Credit, Status)
-VALUES (1, 'CF', 5, 1),
- (2, 'C', 4, 1),
- (3, 'HDJ', 5, 1),
- (4, 'RDBMS', 10, 1);
+VALUES (1, 'Toan', 5, 1),
+ (2, 'Ly', 4, 1),
+ (3, 'Hoa', 5, 1),
+ (4, 'Tieng Anh', 10, 1);
  
  -- Thêm dữ liệu vào bảng Mark
  INSERT INTO Mark (SubId, StudentId, Mark, ExamTimes)
@@ -70,14 +70,15 @@ VALUES (1, 1, 8, 1),
 									-- LUYỆN TẬP CÁC HÀM THÔNG DỤNG TRONG SQL --
 
 -- Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
-select * 
+select *
 from Subject
 where Credit = (select max(Credit) from Subject);
 
 
 -- Hiển thị các thông tin môn học có điểm thi lớn nhất
-SELECT s.*
+SELECT s.*, m.Mark
 FROM Subject s
 JOIN Mark m ON s.SubID = m.SubID
 WHERE m.Mark = (SELECT MAX(Mark) FROM Mark);
 
+-- Hiển thị thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
