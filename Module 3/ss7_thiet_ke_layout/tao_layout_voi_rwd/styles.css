@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .logo,
+.header .login {
+    font-weight: bold;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #e2e2fd;
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.ads {
+    width: 20%;
+    background-color: #e2e2fd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ads div {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .ads {
+        width: 100%;
+    }
+}
