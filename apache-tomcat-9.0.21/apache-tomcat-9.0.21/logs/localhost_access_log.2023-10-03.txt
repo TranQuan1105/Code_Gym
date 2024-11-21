@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:28 +0700] "GET / HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:28 +0700] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:34 +0700] "GET /student-servlet HTTP/1.1" 200 1145
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:35 +0700] "GET /student-servlet?action=showCreateForm HTTP/1.1" 200 579
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:40 +0700] "POST /student-servlet?action=create HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Oct/2023:08:28:40 +0700] "GET /student-servlet HTTP/1.1" 200 1484
