@@ -31,7 +31,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Calculator"></td>
+            <td><input type="submit" value="calculator"></td>
         </tr>
     </table>
 </form>
