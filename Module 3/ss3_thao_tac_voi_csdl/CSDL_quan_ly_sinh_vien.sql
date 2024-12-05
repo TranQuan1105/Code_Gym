@@ -94,7 +94,7 @@ where StudentName = 'Hung';
 
 -- 5.Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
 select Student.StudentName, Subject.SubName, Mark.Mark
-from Mark 
+from Mark
 JOIN Student ON Mark.StudentID = Student.StudentID
 JOIN Subject ON Mark.SubID = Subject.SubID
 ORDER BY Mark.Mark DESC, Student.StudentName ASC;

@@ -44,7 +44,9 @@ CREATE TABLE CHITIETPHIEUXUAT (
         REFERENCES PHIEUXUAT (SoPX),
     FOREIGN KEY (MaVTU)
         REFERENCES VATTU (MaVTU)
-)an hệ giữa vật tư và phiếu nhập
+)
+
+-- Quan hệ giữa vật tư và phiếu nhập
 CREATE TABLE CHITIETPHIEUNHAP (
     SoPN VARCHAR(20),
     MaVTU VARCHAR(20),
