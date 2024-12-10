@@ -5,6 +5,7 @@
     <title>HIỂN THỊ DANH SÁCH KHÁCH HÀNG</title>
 </head>
 <body>
+<a href="customer">Customer List</a>
 <h2>DANH SÁCH KHÁCH HÀNG</h2>
 <table border="1">
     <tr>

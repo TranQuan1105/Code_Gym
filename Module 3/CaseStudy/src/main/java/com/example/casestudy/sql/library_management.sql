@@ -1,34 +1,34 @@
 create database Library_management;
 use Library_management;
 
-CREATE TABLE books (
-    book_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Book (
+    id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     author VARCHAR(255) NOT NULL,
-    category VARCHAR(100),
-    copies_amount INT NOT NULL CHECK (copies_amount >= 0),
-    available_copies INT NOT NULL CHECK (available_copies >= 0)
+    category VARCHAR(255) NOT NULL,
+    copiesAmount INT NOT NULL,
+    availableCopies INT NOT NULL
 );
 
-CREATE TABLE customers (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    phone VARCHAR(15),
+    phone VARCHAR(20),
     email VARCHAR(255),
     address VARCHAR(255)
 );
 
-CREATE TABLE orders (
-    order_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_id INT NOT NULL,
-    book_id INT NOT NULL,
-    borrow_date DATE NOT NULL,
-    return_date DATE,
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
-    FOREIGN KEY (book_id) REFERENCES books(book_id)
+CREATE TABLE Orders (
+    orderId INT AUTO_INCREMENT PRIMARY KEY,
+    customerId INT NOT NULL,
+    bookId INT NOT NULL,
+    borrowDate DATE NOT NULL,
+    returnDate DATE,
+    FOREIGN KEY (customerId) REFERENCES Customer(id),
+    FOREIGN KEY (bookId) REFERENCES Book(id)
 );
 
-INSERT INTO books (title, author, category, copies_amount, available_copies)
+INSERT INTO book (title, author, category, copies_amount, available_copies)
 VALUES 
 ('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 5, 5),
 ('1984', 'George Orwell', 'Dystopian', 5, 5),
@@ -36,7 +36,7 @@ VALUES
 ('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', 5, 5),
 ('Moby Dick', 'Herman Melville', 'Adventure', 5, 5);
 
-INSERT INTO customers (name, phone, email, address)
+INSERT INTO customer (name, phone, email, address)
 VALUES 
 ('Nguyen Van A', '0901234567', 'nguyenvana@gmail.com', 'Ha Noi'),
 ('Tran Thi B', '0987654321', 'tranthib@gmail.com', 'Ho Chi Minh'),
